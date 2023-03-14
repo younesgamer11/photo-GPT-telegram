@@ -12,7 +12,7 @@ logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
 )
 
-bot = Bot(token=TELEGRAM_BOT_TOKEN)
+bot = Bot(token=6247953312:AAFV_mYUJEzr3vd5qQtRfJCkQU6g54NxmhE)
 
 telegram_helper = TelegramHelper(bot=bot)
 conv_bot = ConversationBot(telegram_helper)
@@ -49,7 +49,7 @@ def msg_handler(update: Update, context):
 
 
 if __name__ == "__main__":
-    updater = Updater(token=TELEGRAM_BOT_TOKEN, use_context=True)
+    updater = Updater(token=6247953312:AAFV_mYUJEzr3vd5qQtRfJCkQU6g54NxmhE, use_context=True)
     dispatcher = updater.dispatcher
 
     start_handler = CommandHandler("start", start)
